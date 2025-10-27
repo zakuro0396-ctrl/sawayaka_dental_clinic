@@ -1,0 +1,20 @@
+* {
+  font-family: "Noto Sans JP", "Zen Old Mincho", serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*:lang(en) {
+  font-family: "Zen Old Mincho", serif;
+}
+
+
+
+header {
+  width: 240px;
+  height: auto;
+  background-color: #d2e2ee;
+  text-align: center;
+}
+
+
