@@ -2,14 +2,163 @@
   font-family: "Noto Sans JP", "Zen Old Mincho", serif;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 *:lang(en) {
   font-family: "Zen Old Mincho", serif;
 }
 
+.purple {
+  color: #A18BD5;
+}
+
+.blue {
+  color: #318FBF;
+}
 
 
+/*メインビジュアル*/
+.main-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1820px;
+  margin: 0 auto;
+}
+
+.back-visual {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 30px;
+  padding-left: 50px;
+  width: 100%;
+  max-width: 540px;
+}
+
+#main-message {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  padding-left: 50px;
+}
+
+h2{
+  line-height: 1.2;
+  text-shadow: 5px 5px 5px #696464;
+  font-size: 56px;
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+/*診療時間・診療科目表*/
+.cell {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  justify-items: right;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.medicalhours-tb {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.medicalsubject-tb{
+  border-collapse: collapse;
+  font-weight: bold;
+}
+
+th, td {
+  border: 1px solid #696464CC;
+}
+
+.tb_title, .tb-header3 {
+  color: #ffffff;
+  background-color: #318FBFCC;
+}
+
+.tb_time, .subject {
+  color: #318FBF;
+  background-color: #ffffffCC;
+}
+
+.tb-header1, .time {
+  width: 145px;
+  height: 50px;
+}
+
+.tb-header2, .circle, .slash{
+  width: 45px;
+  height: 50px;
+}
+
+.tb-header3 {
+  width: 110px;
+  height: 35px;
+}
+
+.subject {
+  width: 350px;
+}
+
+/*予約・お問い合わせボタン*/
+
+.bt {
+  display: flex;
+  margin-top: 10px;
+  gap: 40px;
+  width: 460px;
+  justify-content: center;
+ }
+
+.appoint-bt {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: #6F5D9D;
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.bt-icon {
+  width: 45px;
+  height: 45px;
+}
+
+
+.contact-bt {
+  background-color: #2B7BB2;
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+/*header*/
 header {
   width: 240px;
   height: auto;
@@ -17,4 +166,103 @@ header {
   text-align: center;
 }
 
+#nav-pc li {
+  list-style: none;
+}
 
+@media screen and (max-width: 1398px) {
+
+  
+/*メインビジュアル*/
+ #main-message {
+  bottom: 30px;
+}
+
+h1 {
+  max-width: 400px;
+}
+
+h2{
+  font-size: 45px;
+}
+
+
+ /*診療時間・診療科目表*/
+ .cell {
+    bottom: unset;
+    top: 30px;
+    padding-right: 30px;
+  }
+
+  .tb-header1, .time {
+    width: 100px;
+    height: 35px;
+  }
+
+ .tb-header2, .circle, .slash{
+    width: 30px;
+    height: 35px;
+  }
+
+ .tb-header3 {
+    width: 80px;
+  }
+
+ .subject {
+    width: 230px;
+    padding: 0 5px;
+  }
+
+  .bt {
+  margin-top: 10px;
+  gap: 10px;
+  width: 310px;
+ }
+
+
+  .appoint-bt {
+  width: 180px;
+  height: 55px;
+  font-size: 18px;
+  gap: 5px;
+}
+
+.bt-icon {
+  width: 30px;
+  height: 30px;
+}
+
+
+.contact-bt {
+  width: 180px;
+  height: 55px;
+  font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+  .cell {
+    display: none;
+  }
+
+  h1 {
+  padding-left: 20px;
+  max-width: 50vw;
+  top: 10px;
+}
+
+
+  #main-message {
+    bottom: 20px;
+    padding-left: 0; 
+    text-align: center;
+  }
+
+  h2{
+    font-size: 6vw;
+  }
+
+
+  
+}
