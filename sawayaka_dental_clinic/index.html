@@ -10,15 +10,81 @@
   <link rel="icon" href="image/logo3.svg" type="image/svg+xml">
   
   <link rel="stylesheet" href="css/style.css">
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
   
 </head>
 <body>
-  <header>
-    <div class="header-inner">
+ 
+  <main>
+    <article>
+      <!--メインビジュアル-->
+      <section class="main-visual">
+        <img src="image/img4-main.png" alt="歯科医院の受付と待合室" class="back-visual">
+        <h1><img src="image/logo2.svg" alt="さわやか歯科ロゴ"></h1>
+
+        <div id="main-message">
+          <h2>地域の皆様が<span class="purple">安心</span>して通える、<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">家族</span>みんなのための歯科医院</h2>
+        </div>
+
+        <!--診療時間表＋ボタン　※スマホ・タブレット非表示-->
+        <div class="cell">
+          <table class="medicalhours-tb">
+            <tr class="tb_title">
+              <th class="tb-header1">診療時間</th>
+              <th class="tb-header2">月</th>
+              <th class="tb-header2">火</th>
+              <th class="tb-header2">水</th>
+              <th class="tb-header2">木</th>
+              <th class="tb-header2">金</th>
+              <th class="tb-header2">土</th>
+              <th class="tb-header2">日</th>
+            </tr>
+            <tr class="tb_time">
+              <td class="time">9:30~13:00</td>
+              <td class="circle">●</td>
+              <td class="circle">●</td>
+              <td class="slash">/</td>
+              <td class="circle">●</td>
+              <td class="circle">●</td>
+              <td class="circle">●</td>
+              <td class="slash">/</td>
+            </tr>
+            <tr class="tb_time">
+              <td class="time">14:00~18:30</td>
+              <td class="circle">●</td>
+              <td class="circle">●</td>
+              <td class="slash">/</td>
+              <td class="circle">●</td>
+              <td class="circle">●</td>
+              <td class="slash">/</td>
+              <td class="slash">/</td>
+            </tr>
+          </table>
+          <table class="medicalsubject-tb">
+            <tr>
+              <th class="tb-header3">診療科目</th>
+              <td class="subject">一般歯科/小児歯科/口腔外科/予防歯科</td>
+            </tr>
+          </table> 
+          <div class="bt">
+            <button class="appoint-bt">
+              <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon">
+              <span class="bt-text">WEB予約</span>
+            </button>
+            <button class="contact-bt">
+              お問い合わせ
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- グローバルナビゲーション -->
+      <header>
+      <div class="header-inner">
       <!-- ロゴ -->
       <a id="nav-logo" href="index.html">
         <img src="image/logo1.svg" alt="トップページに戻る">
@@ -45,57 +111,6 @@
       </button>
     </div>
   </header>
-  <main>
-    <article>
-      <!--メインビジュアル-->
-      <section id="main-visual">
-        <img src="image/img4-main.png" alt="歯科医院の受付と待合室" class="back-visual">
-        <img src="image/logo2.svg" alt="さわやか歯科ロゴ">
-
-        <div id="main-message">
-          <h1>地域の皆様が<span class="purple">安心</span>して通える、<br>
-          <span class="blue">家族</span>みんなのための歯科医院</h1>
-        </div>
-
-        <table id="medicalhours-tb">
-          <tr class="tb_title">
-            <th class="tb-header1">診療時間</th>
-            <th class="tb-header2">月</th>
-            <th class="tb-header2">火</th>
-            <th class="tb-header2">水</th>
-            <th class="tb-header2">木</th>
-            <th class="tb-header2">金</th>
-            <th class="tb-header2">土</th>
-            <th class="tb-header2">日</th>
-          </tr>
-          <tr>
-            <td class="time">9:30~13:00</td>
-            <td class="circle">●</td>
-            <td class="circle">●</td>
-            <td class="slash">/</td>
-            <td class="circle">●</td>
-            <td class="circle">●</td>
-            <td class="circle">●</td>
-            <td class="slash">/</td>
-          </tr>
-          <tr>
-            <td class="time">14:00~18:30</td>
-            <td class="circle">●</td>
-            <td class="circle">●</td>
-            <td class="slash">/</td>
-            <td class="circle">●</td>
-            <td class="circle">●</td>
-            <td class="slash">/</td>
-            <td class="slash">/</td>
-          </tr>
-        </table>
-        <table id="medicalsubject-tb">
-          <tr>
-            <th class="tb-header3">診療科目</th>
-            <td class="subject">一般歯科/小児歯科/口腔外科/予防歯科</td>
-          </tr>
-        </table> 
-      </section>
     </article>
   </main>
 </body>
