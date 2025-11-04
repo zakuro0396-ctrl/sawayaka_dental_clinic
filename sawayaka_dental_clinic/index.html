@@ -14,9 +14,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
-  
+
 </head>
 <body>
+
+  <!--スマホ用ナビ-->
+  <header>
+    <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <img src="image/material-symbols_menu.png" alt="ナビゲーションを開く">
+    </button>
+
+    <div id="nav-sp">
+      <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <img src="image/button-close.png" alt="ナビゲーションを閉じる">
+      </button>
+    </div>
+
+     <nav>
+        <ul>
+          <li><a class="menu" href="news.html" onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ<br><span lang="en">News</span></a></li>        
+          <li><a class="menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて<br><span lang="en">About</span></a></li>        
+          <li><a class="menu" href="facility.html" onclick="document.getElementById('nav-sp').style.display = 'none'">施設紹介<br><span lang="en">Facility</span></a></li>        
+          <li><a class="menu" href="staff.html" onclick="document.getElementById('nav-sp').style.display = 'none'">医師・スタッフ紹介<br><span lang="en">Doctor・Staff</span></a></li>        
+          <li><a class="menu" href="medical.html" onclick="document.getElementById('nav-sp').style.display = 'none'">診療科目<br><span lang="en">Medical</span></a></li>        
+          <li><a class="menu" href="faq.html" onclick="document.getElementById('nav-sp').style.display = 'none'">よくある質問<br><span lang="en">FAQ</span></a></li>        
+          <li><a class="menu" href="access.html" onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス<br><span lang="en">Access</span></a></li>        
+          <li><a class="menu" href="trivia.html" onclick="document.getElementById('nav-sp').style.display = 'none'">豆知識<br><span lang="en">Trivia</span></a></li>        
+        </ul>
+      </nav>
+      <div class="sp-bt">
+        <button class="appoint-bt">
+          <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
+          WEB予約
+        </button>
+        <button class="contact-bt">
+          お問い合わせ
+        </button>
+      </div>
+  
+  </header>
  
   <main>
     <article>
@@ -102,13 +138,15 @@
           <li><a href="trivia.html">豆知識<br><span lang="en">Trivia</span></a></li>        
         </ul>
       </nav>
-      <button class="appoint-bt">
-        <img src="/image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon">
-        WEB予約
-      </button>
-      <button class="contact-bt">
-        お問い合わせ
-      </button>
+      <div class="nav-bt">
+        <button class="appoint-bt">
+          <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
+          WEB予約
+        </button>
+        <button class="contact-bt">
+          お問い合わせ
+        </button>
+      </div>
     </div>
   </header>
     </article>
