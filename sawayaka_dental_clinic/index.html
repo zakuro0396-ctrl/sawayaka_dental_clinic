@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>さわやか歯科</title>
-  <meta name="discription" content="さわやか歯科のHPサイト">
+    <title>さわやか歯科</title>
+    <meta name="discription" content="さわやか歯科のHPサイト">
 
-  <link rel="icon" href="image/logo3.svg" type="image/svg+xml">
+    <link rel="icon" href="image/logo3.svg" type="image/svg+xml">
   
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-
-  <!--スマホ用ナビ-->
-  <header>
-    <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
-      <img src="image/material-symbols_menu.png" alt="ナビゲーションを開く">
-    </button>
-
-    <div id="nav-sp">
-      <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
-        <img src="image/button-close.png" alt="ナビゲーションを閉じる">
-      </button>
-    </div>
-
-     <nav>
-        <ul>
-          <li><a class="menu" href="news.html" onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ<br><span lang="en">News</span></a></li>        
-          <li><a class="menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて<br><span lang="en">About</span></a></li>        
-          <li><a class="menu" href="facility.html" onclick="document.getElementById('nav-sp').style.display = 'none'">施設紹介<br><span lang="en">Facility</span></a></li>        
-          <li><a class="menu" href="staff.html" onclick="document.getElementById('nav-sp').style.display = 'none'">医師・スタッフ紹介<br><span lang="en">Doctor・Staff</span></a></li>        
-          <li><a class="menu" href="medical.html" onclick="document.getElementById('nav-sp').style.display = 'none'">診療科目<br><span lang="en">Medical</span></a></li>        
-          <li><a class="menu" href="faq.html" onclick="document.getElementById('nav-sp').style.display = 'none'">よくある質問<br><span lang="en">FAQ</span></a></li>        
-          <li><a class="menu" href="access.html" onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス<br><span lang="en">Access</span></a></li>        
-          <li><a class="menu" href="trivia.html" onclick="document.getElementById('nav-sp').style.display = 'none'">豆知識<br><span lang="en">Trivia</span></a></li>        
-        </ul>
-      </nav>
-      <div class="sp-bt">
-        <button class="appoint-bt">
-          <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
-          WEB予約
-        </button>
-        <button class="contact-bt">
-          お問い合わせ
-        </button>
-      </div>
-  
-  </header>
- 
-  <main>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <article>
+
+      <!--スマホ用ナビ-->
+      <header class="hamburger">
+        <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+          <img src="image/material-symbols_menu.png" alt="ナビゲーションを開く">
+        </button>
+      
+        <div id="nav-sp">
+          <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+            <img src="image/button-close.png" alt="ナビゲーションを閉じる">
+          </button>
+        
+          <nav class="nav-menu">
+            <ul>
+              <li><a class="menu" href="news.html" onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ<br><span lang="en">News</span></a></li>        
+              <li><a class="menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて<br><span lang="en">About</span></a></li>        
+              <li><a class="menu" href="facility.html" onclick="document.getElementById('nav-sp').style.display = 'none'">施設紹介<br><span lang="en">Facility</span></a></li>        
+              <li><a class="menu" href="staff.html" onclick="document.getElementById('nav-sp').style.display = 'none'">医師・スタッフ紹介<br><span lang="en">Doctor・Staff</span></a></li>        
+              <li><a class="menu" href="medical.html" onclick="document.getElementById('nav-sp').style.display = 'none'">診療科目<br><span lang="en">Medical</span></a></li>        
+              <li><a class="menu" href="faq.html" onclick="document.getElementById('nav-sp').style.display = 'none'">よくある質問<br><span lang="en">FAQ</span></a></li>        
+              <li><a class="menu" href="access.html" onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス<br><span lang="en">Access</span></a></li>        
+              <li><a class="menu" href="trivia.html" onclick="document.getElementById('nav-sp').style.display = 'none'">豆知識<br><span lang="en">Trivia</span></a></li>        
+            </ul>
+          </nav>
+          <div class="sp-bt">
+            <button class="appoint-bt">
+              <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
+              WEB予約
+            </button>
+            <button class="contact-bt">
+              お問い合わせ
+            </button>
+          </div>
+        </div>
+      </header>
+    
       <!--メインビジュアル-->
       <section class="main-visual">
-        <img src="image/img4-main.png" alt="歯科医院の受付と待合室" class="back-visual">
-        <h1><img src="image/logo2.svg" alt="さわやか歯科ロゴ"></h1>
-
-        <div id="main-message">
-          <h2>地域の皆様が<span class="purple">安心</span>して通える、<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">家族</span>みんなのための歯科医院</h2>
+        <div class="main-vs">
+          <img src="image/img4-main.png" alt="歯科医院の受付と待合室" class="back-visual">
+          <h1><img src="image/logo2.svg" alt="さわやか歯科ロゴ"></h1>         
+          <div id="main-message">
+            <h2>地域の皆様が<span class="purple">安心</span>して通える、<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">家族</span>みんなのための歯科医院</h2>
+          </div>
         </div>
-
+        
         <!--診療時間表＋ボタン　※スマホ・タブレット非表示-->
         <div class="cell">
           <table class="medicalhours-tb">
@@ -91,65 +89,328 @@
             </tr>
             <tr class="tb_time">
               <td class="time">14:00~18:30</td>
-              <td class="circle">●</td>
-              <td class="circle">●</td>
-              <td class="slash">/</td>
-              <td class="circle">●</td>
-              <td class="circle">●</td>
-              <td class="slash">/</td>
-              <td class="slash">/</td>
-            </tr>
-          </table>
-          <table class="medicalsubject-tb">
-            <tr>
-              <th class="tb-header3">診療科目</th>
-              <td class="subject">一般歯科/小児歯科/口腔外科/予防歯科</td>
-            </tr>
-          </table> 
-          <div class="bt">
+            <td class="circle">●</td>
+            <td class="circle">●</td>
+            <td class="slash">/</td>
+            <td class="circle">●</td>
+            <td class="circle">●</td>
+            <td class="slash">/</td>
+            <td class="slash">/</td>
+          </tr>
+        </table>
+        <table class="medicalsubject-tb">
+          <tr>
+            <th class="tb-header3">診療科目</th>
+            <td class="subject">一般歯科/小児歯科/口腔外科/予防歯科</td>
+          </tr>
+        </table> 
+        <div class="bt">
+          <button class="appoint-bt">
+            <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon">
+            <span class="bt-text">WEB予約</span>
+          </button>
+          <button class="contact-bt">
+            お問い合わせ
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <div class="colam"> 
+      
+      <!-- グローバルナビゲーション 左-->
+      <header class="side-nav">
+        <div class="header-inner">
+          <!-- ロゴ -->
+          <a id="nav-logo" href="index.html">
+            <img src="image/logo1.svg" alt="トップページに戻る">
+          </a>
+          <!--PCナビ-->
+          <nav id="nav-pc">
+            <ul class="nav-pc-fonts">
+              <li><a href="news.html">お知らせ<br><span lang="en">News</span></a></li>        
+              <li><a href="about.html">クリニックについて<br><span lang="en">About</span></a></li>        
+              <li><a href="facility.html">施設紹介<br><span lang="en">Facility</span></a></li>        
+              <li><a href="staff.html">医師・スタッフ紹介<br><span lang="en">Doctor・Staff</span></a></li>        
+              <li><a href="medical.html">診療科目<br><span lang="en">Medical</span></a></li>        
+              <li><a href="faq.html">よくある質問<br><span lang="en">FAQ</span></a></li>        
+              <li><a href="access.html">アクセス<br><span lang="en">Access</span></a></li>        
+              <li><a href="trivia.html">豆知識<br><span lang="en">Trivia</span></a></li>        
+            </ul>
+          </nav>
+          <div class="nav-bt">
             <button class="appoint-bt">
-              <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon">
-              <span class="bt-text">WEB予約</span>
+              <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
+              WEB予約
             </button>
             <button class="contact-bt">
               お問い合わせ
             </button>
           </div>
         </div>
-      </section>
+      </header>
+      
+      <main class="content-area">
+        <!--お知らせ-->
+        <section class="news-trivia">
+          <div class="top-news">
+            <h3 class="title01">
+              <span class="blue">お知らせ</span><br><span lang="en">News</span>
+            </h3>
+            <ul class="home-news">
+              <li >
+                <span class="date">2025.10.01</span>
+                <a href=" ">
+                  さわやか歯科クリニックのホームページを開設しました！
+                </a>
+              </li>
+              <li>
+                <span class="date">2025.10.01</span>
+                <a href=" ">
+                  サンプルテキストサンプルテキスト
+                </a>
+              </li>
+              <li>
+                <span class="date">2025.10.01</span>
+                <a href=" ">
+                  サンプルテキストサンプルテキスト
+                </a>
+              </li>
+            </ul>
+            <div class="more"><a href=" ">過去の記事  →</a></div>
+          </div>
+          
+          <div class="top-trivia">
+            <h3 class="title01">
+              <span class="blue">豆知識</span><br><span lang="en">Trivia</span>
+            </h3>
+            <ul class="home-trivia">
+              <li>
+                <a href=" ">
+                  <div class="trivia-gp">
+                    <div class="trivia-text">
+                      <p class="date">2025.10.01</p>
+                      <p class="trivia-title">正しい歯磨きのコツ！毎日のケアでむし歯・歯周病を防ごう</p>
+                      <div class="trivia-img">
+                        <img src="image/mini_bear.png" alt="歯ブラシを持ったクマさん">
+                        <p class="desc">
+                          毎日しっかり歯を磨いているのに、むし歯や歯ぐきの腫れに悩んでいる方も多いのではないでしょうか。
+                          実は、歯磨きの仕方によって汚れの落ち方が大きく変わります。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="more"><a href=" ">過去の記事  →</a></div>
+          </div>
+        </section>
+        
+        <!--ABOUT-->
+        <section class="aboutus">
+          <h3 class="title02">
+            <span class="blue">さわやか歯科</span><span class="black">について</span><br>
+            <span lang="en">About</span>
+          </h3>
+          <div class="about-gp">
+            <div class="about-text">
+              <h3 class="title03">
+                地域の皆様が<span class="purple">安心</span>して通える、<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">家族</span>みんなのための歯科医院
+              </h3>
+              <p>当院は、小さなお子さまからご年配の方まで、どなたでも安心して通える歯科クリニックを目指しています。
+                単に「治療をする」のではなく、患者さんの不安を和らげ、笑顔で通えることを大切にし、最新の設備とやさ
+                しい診療で家族みんなの健康な歯を守れるようサポートしていきます。
+              </p>
+              <div class="staff-facility-bt">
+                <button class="facility-bt">
+                  施設紹介<span class="nomal">→</span> 
+                </button>
+                <button class="staff-bt">
+                  医師・スタッフ紹介<span class="nomal">→</span> 
+                </button>
+              </div>
+            </div>
+            <div class="about-img">
+              <img src="image/img5.jpg" alt="院内の様子">
+            </div>
+          </div>
 
-      <!-- グローバルナビゲーション -->
-      <header>
-      <div class="header-inner">
-      <!-- ロゴ -->
-      <a id="nav-logo" href="index.html">
-        <img src="image/logo1.svg" alt="トップページに戻る">
-      </a>
-      <!--PCナビ-->
-      <nav id="nav-pc">
-        <ul class="nav-pc-fonts">
-          <li><a href="news.html">お知らせ<br><span lang="en">News</span></a></li>        
-          <li><a href="about.html">クリニックについて<br><span lang="en">About</span></a></li>        
-          <li><a href="facility.html">施設紹介<br><span lang="en">Facility</span></a></li>        
-          <li><a href="staff.html">医師・スタッフ紹介<br><span lang="en">Doctor・Staff</span></a></li>        
-          <li><a href="medical.html">診療科目<br><span lang="en">Medical</span></a></li>        
-          <li><a href="faq.html">よくある質問<br><span lang="en">FAQ</span></a></li>        
-          <li><a href="access.html">アクセス<br><span lang="en">Access</span></a></li>        
-          <li><a href="trivia.html">豆知識<br><span lang="en">Trivia</span></a></li>        
-        </ul>
-      </nav>
-      <div class="nav-bt">
-        <button class="appoint-bt">
-          <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
-          WEB予約
-        </button>
-        <button class="contact-bt">
-          お問い合わせ
-        </button>
+          <div class="feature">
+            <h3 class="title03">
+              <span class="purple2">3つの特徴</span>
+            </h3> 
+            <div class="fe-gp">
+              <div class="feature-box">
+                <div class="feature-colam">
+                  <div class="fe-icon">
+                    <img src="image/Vector-tooth.png" alt="歯のアイコン">
+                    <span class="fe-number">1</span>
+                  </div>
+                  <h4>
+                    <span class="blue">痛みの少ない<br></span>
+                      <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                      <span class="blue">やさしい治療</span>
+                    </h4>
+                  </div>
+                  <img class="fe-img" src="image/img3.jpg" alt="診療室内の様子">
+                  <p>
+                    麻酔の工夫や最新の技術を取り入れ、痛みを最小限に抑えた治療
+                    を心がけています。歯医者が苦手な方も、安心して通っていただ
+                    けるよう配慮しています。
+                  </p>
+              </div>
+              <div class="feature-box">
+                  <div class="feature-colam">
+                    <div class="fe-icon">
+                      <img src="image/Vector-tooth.png" alt="歯のアイコン">
+                      <span class="fe-number">2</span>
+                    </div>
+                    <h4>
+                      <span class="blue">お口の健康を<br></span>
+                      <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                      <span class="blue">守る予防歯科</span>
+                    </h4>
+                    </div>
+                    <img class="fe-img" src="image/img7.jpg" alt="歯の模型">
+                    <p>
+                      「痛くなったら行く」のではなく、むし歯や歯周病を防ぐ予防ケア
+                      を大切にしています。定期検診・クリーニングで、大切な歯を一生涯守ります。
+                    </p>
+              </div>
+              <div class="feature-box">
+                <div class="feature-colam">
+                  <div class="fe-icon">
+                        <img src="image/Vector-tooth.png" alt="歯のアイコン">
+                        <span class="fe-number">3</span>
+                  </div>
+                  <h4>
+                   <span class="blue">清潔で最新の設備
+                  </h4>
+                  </div>
+                  <img class="fe-img" src="image/img1.jpg" alt="治療機器">
+                  <p>
+                   麻酔の工夫や最新の技術を取り入れ、痛みを最小限に抑えた治療
+                   を心がけています。歯医者が苦手な方も、安心して通っていただ
+                   けるよう配慮しています。
+                  </p>
+              </div>
+          </div>
+        </section>
+        <section class="medical-sec">
+          <h3 class="title02">
+           <span class="blue">診療科目</span><br>
+           <span lang="en">Medical</span>
+          </h3>
+          <div class="medical-box">
+                <a href=""><img src="image/Group 22.png" alt="一般歯科"></a> 
+                <a href=""><img src="image/Group 23.png" alt="小児歯科"></a> 
+                <a href=""><img src="image/Group 24.png" alt="口腔外科"></a> 
+                <a href=""><img src="image/Group 25.png" alt="予防歯科"></a> 
+          </div> 
+        </section>
+
+       <!--FAQ-->
+        <section class="faq-sec">
+          <h3 class="title02">
+           <span class="blue">よくある質問</span><br>
+           <span lang="en">FAQ</span>
+          </h3>
+          
+          <div class="faq-gp">
+
+            <input id="acd-1" class="acd-cheak" type="checkbox">
+            <label class="acd-lb" for="acd-1"><span class="q">Q.</span>サンプルテキスト</label>
+            <div class="acd-a">
+              <p><span class="a">A.</span>サンプルテキストサンプルテキスト </p>
+            </div>
+            
+            <input id="acd-2" class="acd-cheak" type="checkbox">
+            <label class="acd-lb" for="acd-2"><span class="q">Q.</span>サンプルテキスト</label>
+            <div class="acd-a">
+              <p><span class="a">A.</span>サンプルテキストサンプルテキスト </p>
+            </div>
+            
+            <input id="acd-3" class="acd-cheak" type="checkbox">
+            <label class="acd-lb" for="acd-3"><span class="q">Q.</span>サンプルテキスト</label>
+            <div class="acd-a">
+              <p><span class="a">A.</span>サンプルテキストサンプルテキスト </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ap-contact">
+          <h3 class="title02">
+           <span class="blue">ご予約・ご相談</span><br>
+           <span lang="en">Appoint・Contact</span>
+          </h3>
+          
+          <div class="ap-contact-gp">
+
+            <!--診療時間表＋ボタン　※スマホ・タブレット非表示-->
+            <div class="cell2">
+              <table class="medicalhours-tb">
+                <tr class="tb_title">
+                  <th class="tb-header1">診療時間</th>
+                  <th class="tb-header2">月</th>
+                  <th class="tb-header2">火</th>
+                  <th class="tb-header2">水</th>
+                  <th class="tb-header2">木</th>
+                  <th class="tb-header2">金</th>
+                  <th class="tb-header2">土</th>
+                  <th class="tb-header2">日</th>
+                </tr>
+                <tr class="tb_time">
+                  <td class="time">9:30~13:00</td>
+                  <td class="circle">●</td>
+                  <td class="circle">●</td>
+                  <td class="slash">/</td>
+                  <td class="circle">●</td>
+                  <td class="circle">●</td>
+                  <td class="circle">●</td>
+                  <td class="slash">/</td>
+                </tr>
+                <tr class="tb_time">
+                  <td class="time">14:00~18:30</td>
+                  <td class="circle">●</td>
+                  <td class="circle">●</td>
+                  <td class="slash">/</td>
+                  <td class="circle">●</td>
+                  <td class="circle">●</td>
+                  <td class="slash">/</td>
+                  <td class="slash">/</td>
+                </tr>
+              </table>
+              <p class="blue">休診日：水曜日・日曜日</p>
+              <table class="medicalsubject-tb">
+                <tr>
+                  <th class="tb-header3">診療科目</th>
+                  <td class="subject">一般歯科/小児歯科/口腔外科/予防歯科</td>
+                </tr>
+              </table> 
+              <div class="bt">
+                <button class="appoint-bt">
+                  <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon">
+                  <span class="bt-text">WEB予約</span>
+                </button>
+                <button class="contact-bt">
+                  お問い合わせ
+                </button>
+              </div>
+            </div>
+            
+            <div class="calendar">
+              <iframe src="https://calendar.google.com/calendar/embed?src=ja.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo"></iframe>             
+            </div>
+          </div>
+          </section>                    
+        </main>
       </div>
-    </div>
-  </header>
     </article>
-  </main>
+    <footer>
+      
+    </footer>
+  
 </body>
 </html>
