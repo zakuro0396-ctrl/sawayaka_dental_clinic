@@ -32,7 +32,7 @@
           <nav class="nav-menu">
             <ul>
               <li><a class="menu" href="news.html" onclick="document.getElementById('nav-sp').style.display = 'none'">お知らせ<br><span lang="en">News</span></a></li>        
-              <li><a class="menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて<br><span lang="en">About</span></a></li>        
+              <li><a class="menu" href="#about" onclick="document.getElementById('nav-sp').style.display = 'none'">クリニックについて<br><span lang="en">About</span></a></li>        
               <li><a class="menu" href="facility.html" onclick="document.getElementById('nav-sp').style.display = 'none'">施設紹介<br><span lang="en">Facility</span></a></li>        
               <li><a class="menu" href="staff.html" onclick="document.getElementById('nav-sp').style.display = 'none'">医師・スタッフ紹介<br><span lang="en">Doctor・Staff</span></a></li>        
               <li><a class="menu" href="medical.html" onclick="document.getElementById('nav-sp').style.display = 'none'">診療科目<br><span lang="en">Medical</span></a></li>        
@@ -42,13 +42,13 @@
             </ul>
           </nav>
           <div class="sp-bt">
-            <button class="appoint-bt">
+            <a href="appointment.html" class="appoint-bt">
               <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
               WEB予約
-            </button>
-            <button class="contact-bt">
+            </a>
+            <a href="contact.html" class="contact-bt">
               お問い合わせ
-            </button>
+            </a>
           </div>
         </div>
       </header>
@@ -105,13 +105,13 @@
           </tr>
         </table> 
         <div class="bt">
-          <button class="appoint-bt">
+          <a href="" class="appoint-bt">
             <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon">
             <span class="bt-text">WEB予約</span>
-          </button>
-          <button class="contact-bt">
+          </a>
+          <a href="" class="contact-bt">
             お問い合わせ
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -129,7 +129,7 @@
           <nav id="nav-pc">
             <ul class="nav-pc-fonts">
               <li><a href="news.html">お知らせ<br><span lang="en">News</span></a></li>        
-              <li><a href="about.html">クリニックについて<br><span lang="en">About</span></a></li>        
+              <li><a href="#about">クリニックについて<br><span lang="en">About</span></a></li>        
               <li><a href="facility.html">施設紹介<br><span lang="en">Facility</span></a></li>        
               <li><a href="staff.html">医師・スタッフ紹介<br><span lang="en">Doctor・Staff</span></a></li>        
               <li><a href="medical.html">診療科目<br><span lang="en">Medical</span></a></li>        
@@ -139,13 +139,13 @@
             </ul>
           </nav>
           <div class="nav-bt">
-            <button class="appoint-bt">
+            <a href="" class="appoint-bt">
               <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon2">
               WEB予約
-            </button>
-            <button class="contact-bt">
+            </a>
+            <a href="" class="contact-bt">
               お問い合わせ
-            </button>
+            </a>
           </div>
         </div>
       </header>
@@ -208,7 +208,7 @@
         </section>
         
         <!--ABOUT-->
-        <section class="aboutus">
+        <section id="about" class="aboutus">
           <h3 class="title02">
             <span class="blue">さわやか歯科</span><span class="black">について</span><br>
             <span lang="en">About</span>
@@ -224,12 +224,12 @@
                 しい診療で家族みんなの健康な歯を守れるようサポートしていきます。
               </p>
               <div class="staff-facility-bt">
-                <button class="facility-bt">
+                <a href="facility.html" class="facility-bt">
                   施設紹介<span class="nomal">→</span> 
-                </button>
-                <button class="staff-bt">
+                </a>
+                <a href="staff.html" class="staff-bt">
                   医師・スタッフ紹介<span class="nomal">→</span> 
-                </button>
+                </a>
               </div>
             </div>
             <div class="about-img">
@@ -237,6 +237,7 @@
             </div>
           </div>
 
+          <!--3つの特徴-->
           <div class="feature">
             <h3 class="title03">
               <span class="purple2">3つの特徴</span>
@@ -296,18 +297,23 @@
                    けるよう配慮しています。
                   </p>
               </div>
+            </div>
           </div>
         </section>
+
+        <!--診療科目-->
         <section class="medical-sec">
           <h3 class="title02">
            <span class="blue">診療科目</span><br>
            <span lang="en">Medical</span>
           </h3>
           <div class="medical-box">
-                <a href=""><img src="image/Group 22.png" alt="一般歯科"></a> 
-                <a href=""><img src="image/Group 23.png" alt="小児歯科"></a> 
-                <a href=""><img src="image/Group 24.png" alt="口腔外科"></a> 
-                <a href=""><img src="image/Group 25.png" alt="予防歯科"></a> 
+                <a href="" ><img src="image/Group 22.png" alt="一般歯科"></a> 
+                <a href="" ><img src="image/Group 23.png" alt="小児歯科"></a> 
+                <a href="" ><img src="image/Group 24.png" alt="口腔外科"></a> 
+                <a href="" ><img src="image/Group 25.png" alt="予防歯科"></a> 
+                <div class="dummy"></div>
+                <div class="dummy"></div>
           </div> 
         </section>
 
@@ -390,13 +396,13 @@
                 </tr>
               </table> 
               <div class="bt">
-                <button class="appoint-bt">
+                <a href="appointment.html" class="appoint-bt">
                   <img src="image/akar-icons_schedule.png" alt="予約アイコン" class="bt-icon">
                   <span class="bt-text">WEB予約</span>
-                </button>
-                <button class="contact-bt">
+                </a>
+                <a href="contact.html" class="contact-bt">
                   お問い合わせ
-                </button>
+                </a>
               </div>
             </div>
             
@@ -404,13 +410,46 @@
               <iframe src="https://calendar.google.com/calendar/embed?src=ja.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo"></iframe>             
             </div>
           </div>
-          </section>                    
-        </main>
+        </section>                    
+      </main>
+    </div>
+        
+        <!--フッター-->
+    <footer class="footer-all">      
+      <div class="footer-gp">
+        <div class="sp-footer-right">
+
+          <div class="footer-right">
+            <img src="image/footer-logo.svg" alt="さわやか歯科クリニック">
+          </div>
+          <div class="footer-center">
+            <p>〒105-0001<br>東京都港区虎ノ門１丁目３−１</p>
+            <p>診療時間<br>午前9:30-13:00<br>午後14:00-18:30<br>水・日休診 / 土曜日は午前のみ</p>
+          </div>
+        </div>
+
+          <div class="footer-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.313316771306!2d139.7473528431803!3d35.669286475656556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5f5a18eac5%3A0x2a8366f3652c80e1!2z5p2x5Lqs6JmO44OO6ZaA44Kw44Ot44O844OQ44Or44K544Kv44Ko44Ki!5e0!3m2!1sja!2sjp!4v1763188918959!5m2!1sja!2sjp" ></iframe>
+          </div>
       </div>
-    </article>
-    <footer>
+        
       
-    </footer>
-  
+        <ul class="footer-list">
+          <li><a href="#about">クリニックについて</a></li>
+          <li><a href="facility.html">施設紹介</a></li>
+          <li><a href="staff.html">医師・スタッフ紹介</a></li>
+          <li><a href="medical.html">診療科目</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="trivia.html">豆知識</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+        </ul>
+      
+      <div class="copyright">
+        2025 SawayakaDentalClinic, Inc.All rights Reserved.
+      </div>
+    </foote>
+</article>
+    
 </body>
 </html>
